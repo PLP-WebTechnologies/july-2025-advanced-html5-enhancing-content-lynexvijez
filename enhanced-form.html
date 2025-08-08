@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enhanced HTML5 Form " />
+    <title>Enhanced Form Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #555;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+      legend {
+        font-weight: bold;
+      }
+      label {
+        display: block;
+        margin: 8px 0 4px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      img,
+      audio,
+      video {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Multi-Section HTML5 Page</h1>
+      <p>
+        This page demonstrates the use of <strong>lists, tables, media</strong>,
+        and a <strong>validated HTML5 form</strong>.
+      </p>
+    </header>
+
+    <main>
+      <!-- Lists Section -->
+      <section>
+        <h2>My Favorite Programming Languages</h2>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>C++</li>
+        </ul>
+      </section>
+
+      <!-- Table Section -->
+      <section>
+        <h2>Top 3 Web Browsers</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Browser</th>
+              <th>Company</th>
+              <th>Market Share</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Chrome</td>
+              <td>Google</td>
+              <td>65%</td>
+            </tr>
+            <tr>
+              <td>Safari</td>
+              <td>Apple</td>
+              <td>19%</td>
+            </tr>
+            <tr>
+              <td>Microsoft Edge</td>
+              <td>Microsoft</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media Section -->
+      <section>
+        <h2>Media Examples</h2>
+        <img
+          src="L:\PLP Software Engineering\web dev\enhanced-form.html\image1.jpg"
+          alt="Sample Image"
+        />
+        <audio controls>
+          <source
+            src="L:\PLP Software Engineering\web dev\enhanced-form.html\Christopher Martin - Goodness of God [GHPVC2-yA5Q].mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <video controls width="400" height="600">
+          <source
+            src="L:\PLP Software Engineering\web dev\enhanced-form.html\Instagram.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+
+      <!-- HTML5 Form Section -->
+      <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+          <!-- Personal Info -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+              minlength="3"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="0712345678"
+              pattern="[0-9]{10}"
+              required
+            />
+          </fieldset>
+
+          <!-- Account Info -->
+          <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              minlength="5"
+            />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+            />
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+              minlength="6"
+            />
+          </fieldset>
+
+          <!-- Preferences -->
+          <fieldset>
+            <legend>Preferences</legend>
+            <label for="language">Preferred Language:</label>
+            <select id="language" name="language" required>
+              <option value="">--Select--</option>
+              <option value="python">Python</option>
+              <option value="javascript">JavaScript</option>
+              <option value="java">Java</option>
+            </select>
+
+            <label for="bio">Short Bio:</label>
+            <textarea
+              id="bio"
+              name="bio"
+              placeholder="Tell us about yourself..."
+              rows="4"
+            ></textarea>
+
+            <label>
+              <input type="checkbox" name="terms" required />
+              I agree to the Terms and Conditions
+            </label>
+          </fieldset>
+
+          <!-- Submit -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lynex. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
